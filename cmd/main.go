@@ -3,8 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"github.com/D1Y0RBEKORIFJONOV/Chat_service/postgres"
-	"github.com/D1Y0RBEKORIFJONOV/Chat_service/user"
 	"os"
 	"os/exec"
 	"strconv"
@@ -32,22 +30,21 @@ func ClearScreen() {
 	cmd.Run()
 }
 
-//
 //func Login() user.User {
 //	fmt.Println("Login")
 //
 //}
 
 func main() {
-	err := postgres.Migration()
-	if err != nil {
-		panic(err)
-	}
-
-	usr, err := user.ReadUser("Diyorbek", "+_+diyor2005+_+")
-	if err != nil {
-		panic(err)
-	}
-	fmt.Println(usr)
+	//err := postgres.Migration()
+	//if err != nil {
+	//	panic(err)
+	//}
+	//
+	//usr, err := user.ReadUser("Diyorbek", "+_+diyor2005+_+")
+	//if err != nil {
+	//	panic(err)
+	//}
+	//fmt.Println(usr)
 
 }
